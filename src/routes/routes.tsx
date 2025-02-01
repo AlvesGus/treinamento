@@ -1,3 +1,4 @@
+import { Head } from '@/components/head'
 import { Header } from '@/components/header'
 import { Admin } from '@/pages/admin'
 import { Customers } from '@/pages/customers'
@@ -13,6 +14,7 @@ export function RouterApp() {
       {pathName !== '/login' && <Header />}
 
       <div className="w-full pl-10">
+        {pathName !== '/login' && <Head />}
         <Routes>
           <Route path="/" element={<Admin />} />
           <Route path="/login" element={<Login />} />

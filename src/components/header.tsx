@@ -12,7 +12,9 @@ export function Header() {
       <aside className="w-[250px] h-screen rounded-r-lg bg-[#161616] flex flex-col items-center justify-between pt-10 border-r-[1px] border-r-zinc-800">
         <div>
           <h1 className="text-3xl font-bold">
-            Dash<span className="text-indigo-500">Shop</span>
+            <a href="/">
+              Dash<span className="text-indigo-500">Shop</span>
+            </a>
           </h1>
         </div>
         <Separator className="bg-zinc-800 mt-5" />

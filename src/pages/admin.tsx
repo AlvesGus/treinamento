@@ -1,14 +1,10 @@
-import { Head } from '@/components/head'
 import { cardsContent } from '@/utils/utils'
 
 export function Admin() {
   const card = cardsContent
 
   return (
-    <div className="w-full h-screen pr-10">
-      <div>
-        <Head />
-      </div>
+    <div className="w-full  pr-10">
       <div className="w-full pt-[60px]">
         <div className="w-full grid grid-cols-3 gap-10 justify-items-center">
           {card.map(item => (
